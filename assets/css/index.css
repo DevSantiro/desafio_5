@@ -1,0 +1,145 @@
+body {
+  background-image: linear-gradient(#628e75, #1a4855); background-repeat: no-repeat;
+  color: var(--white);
+  height: 100vh;
+}
+
+section {
+  max-width: 1200px;
+  /* height: 100vh; */
+  margin: 0 auto;
+}
+
+.container_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+
+  margin-bottom: 5rem;
+}
+
+.container_header > img {
+  width: 10rem;
+}
+
+.header_icons {
+  width: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container_info {
+  width: 445px;
+}
+
+.container_info > h2 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.container_info > h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 68px;
+}
+
+.container_info > p {
+  text-align: justify;
+  text-justify: inter-word;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  margin-bottom: 8rem;
+}
+
+.botoes {
+  width: 445px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#assistir {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  justify-content: center;
+
+  background: var(--bntAssistir);
+  color: var(--white);
+  padding: 1.5rem;
+  border: none;
+  width: 45%;
+  transform: skew(-20deg);
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#assistir > img {
+  margin-right: 1rem;
+}
+
+#trailer {
+  background: transparent;
+  color: var(--white);
+  padding: 1.5rem;
+  width: 45%;
+  border: 2px solid var(--bntAssistir);
+  transform: skew(-20deg);
+  font-family: Poppins, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.main_container > img {
+  width: 40rem;
+  /* margin: 0 auto; */
+}
+
+@media screen and (max-width:809px) {
+  body {
+    width: 100%;
+    height: 100%;
+
+    padding: 2rem;
+  }
+
+  .main_container {
+    flex-direction: column;
+  }
+
+  #trailer {
+    display: none;
+  }
+
+  #assistir {
+    width: 60%;
+  }
+
+  #bg_image {
+    order: 1;
+  }
+
+  .container_info {
+    order: 2;
+    width: 100%;
+  }
+
+  .botoes {
+    width: 100%;
+    margin-bottom: 10rem;
+  }
+
+}
